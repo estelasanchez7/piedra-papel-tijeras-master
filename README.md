@@ -23,4 +23,4 @@ La aplicación sigue los principios del diseño responsive, está en formato ord
 ## Colaboraciones
 
 <a href="https://github.com/nurimartinez" target="_blank"><img src="https://avatars.githubusercontent.com/u/72202917?s=460&u=1d271710c82a47e527b0622f900305a11b660b41&v=4" width="50"></a>
-<a href="https://github.com/estelasanchez7" target="_blank"><img src="https://avatars.githubusercontent.com/u/72202950?v=4" width="50"></a>
+<a href="https://github.com/DvM94" target="_blank"><img src="https://avatars.githubusercontent.com/u/72202950?v=4" width="50"></a>
