@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+  font-family: 'Acme', sans-serif;
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/preloader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+body{
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer{
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a{
+  color: #4B72A6;
+}
+
+a:hover{
+  color: #89BAD9;
+  text-decoration: none;
+}
+
+.selectGame img {
+  width: 200px;
+  height: 200px;
+}
+
+.selectGame img:hover{
+  width: 220px;
+  height: 220px;
+}
+
+#name-player{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3em;
+  background-color:rgba(255, 255, 255, 0.500);
+  border: none;
+  border-bottom: 2px solid #4B72A6;
+}
+
+.selectGame{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto;
+  height: 220px;
+  width: 70%;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+}
+
+h1, h2{
+  text-align:center;
+}
+
+.resultGame{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto;
+  width: 70%;
+}
+
+.resultGame img {
+  width: 160px;
+}
+
+h1{
+  margin-top: 30px;
+}
+
+.imgResult{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+}
+
+#imgGame{
+  width: 200px;
+}
+
+.animation{
+  animation-duration: 1s;
+  animation-name: aparecer;
+}
+
+.animation2{
+  animation-duration: 1s;
+  animation-name: aparecer2;
+}
+
+@keyframes aparecer {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes aparecer2 {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+.hide{
+  display: none;
+}
+
+.modal-start, .modal-end{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.gif{
+  display: flex;
+  justify-content: center;
+}
+
+.gif img{
+  width: 100%;
+  max-width: 600px;
+}
+
+.game-logo{
+  width: 35%;
+  min-width: 350px;
+  margin: 30px auto 25px auto;
+}
+
+#logo {
+  max-width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: auto;
+}
+
+label{
+  font-size: 1.7em;
+  text-align: center;
+}
+
+#play{
+  width: 20%;
+  min-width: 150px;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+#replay{
+  width: 35%;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+#play img, #replay img{
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.audio {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  h1{
+  margin-top: 80px;
+  }
+  .selectGame img {
+    width: 130px;
+    height: 130px;
+  }
+  .selectGame img:hover{
+    width: 150px;
+    height: 150px;
+  }
+  .selectGame{
+    height: 150px;
+  }
+  .item{
+    width: 150px;
+    height: 150px;
+  }
+  .resultGame{
+  width: 100%;
+  }
+  .resultGame img {
+  width: 100px;
+  }
+  .imgResult{
+  width: 100px;
+  }
+  #imgGame{
+    width: 120px;
+  }
+  form{
+    width: 50%;
+  }
+  @keyframes aparecer {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 120px;
+    }
+  }
+  @keyframes aparecer2 {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 120px;
+    }
+  }
+  .game-logo{
+  margin: 60px auto 30px auto;
+  }
+}
+
+//Marcador
+
+header{
+  padding: 10px;
+}
+
+.marcador{
+  border: 2px solid #000;
+  background-color: rgba(255, 255, 255, 0.500);
+  margin: 20px auto;
+  width: 250px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.badge{
+  background: #4B72A6;
+  font-size: 25px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 8px 3px;
+  color: rgb(235, 235, 235);
+  font-weight: 100;
+}
+
+.user-label{
+  position: absolute;
+  top: auto;
+  left: -60px;
+  height: 60%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.comp-label{
+  position: absolute;
+  top: auto;
+  right: -60px;
+  height: 60%; 
+  width: 50%;
+}
+
+#user-score, #comp-score{
+  padding: 5px;
+  font-size: 30px;
+}
